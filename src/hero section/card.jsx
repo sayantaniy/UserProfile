@@ -88,10 +88,12 @@ const card = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.4 }}
         whileHover={{ scale: 1.05 }}
-        className='font-bold px-3 py-2 mt-2 bg-amber-800 rounded-2xl font-patrick t5 c3'
+        className='font-bold px-3 py-2 mt-2 bg-amber-800 rounded-2xl font-patrick t5 c3 '
       >
         INTJ
       </motion.div>
+
+      
 
     </motion.div>
   )
