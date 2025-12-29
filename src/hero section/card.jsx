@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "motion/react"
 
+
 const card = () => {
   return (
     <motion.div
@@ -92,6 +93,7 @@ const card = () => {
       >
         INTJ
       </motion.div>
+     
 
       
 
