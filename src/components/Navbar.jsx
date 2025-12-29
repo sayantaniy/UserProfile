@@ -1,6 +1,7 @@
 import React from 'react'
 import Searchbar from '../Navbar/Searchbar'
 import Welcome from '../Navbar/Welcome'
+import Clock from '../bodytop/clock'
 
 const Navbar = () => {
   return (
@@ -12,7 +13,10 @@ const Navbar = () => {
       gap-4
     ">
       <Searchbar />
+      <div className='lg:flex'>
+      <Clock  />
       <Welcome />
+      </div>
     </div>
   )
 }

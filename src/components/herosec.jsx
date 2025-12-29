@@ -5,7 +5,7 @@ import Card from '../hero section/card'
 
 const herosec = () => {
   return (
-    <div className='flex flex-col lg:flex-row  px-4 justify-between items-center'>
+    <div className='flex flex-col lg:flex-row  px-4 gap-5 justify-between items-center'>
       <Basicinfo />
       <Card />
     </div>

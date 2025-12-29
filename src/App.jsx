@@ -3,12 +3,13 @@ import Navbar from './components/Navbar.jsx'
 import Socials from './components/socials.jsx'
 import Herosec from './components/herosec.jsx'
 import Freesp from './components/freesp.jsx'
+import Bodytop from './components/bodytop.jsx'
 
 const App = () => {
   return (
     <div className='min-h-screen c0'>
       <Navbar />
-      
+      <Bodytop />
       <Herosec />
       <Socials />
       <Freesp />
