@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar.jsx'
-
+import Socials from './components/socials.jsx'
 import Herosec from './components/herosec.jsx'
 
 
@@ -10,6 +10,7 @@ const App = () => {
       <Navbar />
       
       <Herosec />
+      <Socials />
       
 
     </div>
