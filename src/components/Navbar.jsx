@@ -10,7 +10,7 @@ const Navbar = () => {
       lg:flex-row
       justify-between
       items-center
-      gap-4
+      gap-4 lg:ml-5
     ">
       <Searchbar />
       <div className='lg:flex'>

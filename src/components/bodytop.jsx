@@ -5,7 +5,7 @@ import Clock from '../bodytop/clock'
 
 const bodytop = () => {
   return (
-    <div className='flex justify-around lg:justify-start'>
+    <div className='flex justify-around lg:justify-start lg:ml-9'>
       <Weather />
       <Bday />
       
