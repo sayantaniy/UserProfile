@@ -1,0 +1,143 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend&family=Patrick+Hand+SC&family=Playwrite+US+Trad+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radley:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+/* ===== FONT UTILITY CLASSES (CSS ONLY) ===== */
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-rubik {
+  font-family: 'Rubik', sans-serif;
+}
+
+.font-lexend {
+  font-family: 'Lexend', sans-serif;
+}
+
+.font-crimson {
+  font-family: 'Crimson Text', serif;
+}
+
+.font-dmserif {
+  font-family: 'DM Serif Text', serif;
+}
+
+.font-radley {
+  font-family: 'Radley', serif;
+}
+
+.font-comic {
+  font-family: 'Comic Relief', cursive;
+}
+
+.font-patrick {
+  font-family: 'Patrick Hand SC', cursive;
+}
+
+.font-instrument {
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+.font-googlesans {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.first-color { 
+	background: #ffcbcb; 
+}
+	
+.second-color { 
+	background: #ffb5b5; 
+}
+
+.third-color { 
+	background: #407088; 
+}
+
+.fourth-color { 
+	background: #132743; 
+}
+
+.c0{
+  background-image: linear-gradient(315deg, #ffe7fc 0%, #dbc3d5 74%);
+}
+
+.c1 {
+  background-color: 	#fcdfd9;
+}
+.c2 {
+  background-color: 	#fac7cf	;
+}
+.c3 {
+  background-color: #dcacc2;
+}
+
+.c4 {
+  background-color: 	#e1a2aa;
+}
+
+.c5{
+  background-color: #6f595b;
+}
+
+.c6{
+  background-color: #b796a54d;
+}
+
+.t1 {
+  color: 	#fcdfd9;
+}
+.t2 {
+  color: 	#fac7cf	;
+}
+.t3 {
+  color: #dcacc2;
+}
+
+.t4 {
+  color: 	#e1a2aa;
+}
+
+.t5{
+  color: #6f595b;
+}
+
+.t6{
+  color: #a67085;
+}
+
+.b1{
+  border: 1px solid #ae96a3;
+}
+
+.b2{
+  border: 1px solid #b48ab0;
+} 
+.b4{
+  border: 1px solid #7e5630;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent */
+  backdrop-filter: blur(10px); /* blur effect for glass */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+  border-radius: 15px; /* rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* soft shadow */
+  padding: 20px;
+  color: white; /* text color */
+}
+
+
+
+/* ===== OPTIONAL: DEFAULT FONT ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+}
