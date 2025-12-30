@@ -123,7 +123,7 @@ const card = ({onOpenModal}) => {
             }}
             className='rounded-full h-7 w-7 object-cover b4 touch-manipulation cursor-pointer select-none'
             style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent', userSelect: 'none' }}
-            src='https://i.pinimg.com/736x/e5/69/47/e56947ee8299bdb266d90c2e3c8f592c.jpg'
+            src=' https://i.pinimg.com/736x/91/3c/de/913cde2fba66f906bc1512603df28029.jpg'
             alt="Sun sign"
           />
         </motion.div>
@@ -147,7 +147,7 @@ const card = ({onOpenModal}) => {
             }}
             className='rounded-full h-7 w-7 object-cover b4 touch-manipulation cursor-pointer select-none'
             style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent', userSelect: 'none' }}
-            src='https://i.pinimg.com/736x/91/3c/de/913cde2fba66f906bc1512603df28029.jpg'
+            src='https://i.pinimg.com/736x/e5/69/47/e56947ee8299bdb266d90c2e3c8f592c.jpg'
             alt="Moon sign"
           />
         </motion.div>
