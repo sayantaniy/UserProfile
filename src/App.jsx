@@ -1,19 +1,26 @@
-import React from 'react'
-import Navbar from './components/Navbar.jsx'
-import Socials from './components/socials.jsx'
-import Herosec from './components/herosec.jsx'
-import Freesp from './components/freesp.jsx'
-import Bodytop from './components/bodytop.jsx'
+import React, { useState } from 'react'
+import Page1 from './pages/page1'
+import Page2 from './pages/page2'
+import Modal from './components/modal'
+import { Route, Routes } from 'react-router-dom'
 
 const App = () => {
-  return (
-    <div className='min-h-screen c0'>
-      <Navbar />
-      <Bodytop />
-      <Herosec />
-      <Socials />
-      <Freesp />
 
+  const [open, setOpen] = useState(null)
+
+  const onOpenModal = (type) => setOpen(type)
+  const onCloseModal = () => setOpen(null)
+
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Page1 onOpenModal={onOpenModal} />} />
+        <Route path="/playlist" element={<Page2 />} />
+      </Routes>
+
+      {open && (
+        <Modal title={open} onClose={onCloseModal} />
+      )}
     </div>
   )
 }

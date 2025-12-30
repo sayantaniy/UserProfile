@@ -3,11 +3,11 @@ import Basicinfo from '../hero section/basicinfo'
 import Card from '../hero section/card'
 
 
-const herosec = () => {
+const herosec = ({onOpenModal}) => {
   return (
     <div className='flex flex-col lg:flex-row  px-4 gap-5 justify-between items-center'>
       <Basicinfo />
-      <Card />
+      <Card onOpenModal={onOpenModal} />
     </div>
   )
 }
