@@ -54,7 +54,7 @@ const card = ({onOpenModal}) => {
           className='bg-amber-500 rounded-full b4'
         >
           <img onClick={()=>{onOpenModal('rising')}}
-            className='rounded-full h-7 w-7 object-cover b4'
+            className='rounded-full h-7 w-7 object-cover b4 touch-manipulation'
             src='https://i.pinimg.com/736x/c1/c2/43/c1c243e0c05b608b40f9c555ad05be0e.jpg'
           />
         </motion.div>
@@ -70,7 +70,7 @@ const card = ({onOpenModal}) => {
           className='b4 rounded-full'
         >
           <img onClick={()=>{onOpenModal('sun')}}
-            className='rounded-full h-7 w-7 object-cover b4'
+            className='rounded-full h-7 w-7 object-cover b4 touch-manipulation'
             src='https://i.pinimg.com/736x/e5/69/47/e56947ee8299bdb266d90c2e3c8f592c.jpg'
           />
         </motion.div>
@@ -82,7 +82,7 @@ const card = ({onOpenModal}) => {
           className='bg-amber-950 b4 rounded-full'
         >
           <img onClick={()=>{onOpenModal('moon')}}
-            className='rounded-full h-7 w-7 object-cover b4'
+            className='rounded-full h-7 w-7 object-cover b4 touch-manipulation'
             src='https://i.pinimg.com/736x/91/3c/de/913cde2fba66f906bc1512603df28029.jpg'
           />
         </motion.div>
@@ -95,7 +95,7 @@ const card = ({onOpenModal}) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.4 }}
         whileHover={{ scale: 1.05 }}
-        className='font-bold px-3 py-2 mt-2 bg-amber-800 rounded-2xl font-patrick t5 c3 cursor-pointer hover:scale-110 transform transition duration-300 ease-in-out'
+        className='font-bold px-3 py-2 mt-2 bg-amber-800 touch-manipulationrounded-2xl font-patrick t5 c3 cursor-pointer hover:scale-110 transform transition duration-300 ease-in-out'
       >
         INTJ
       </motion.div>
