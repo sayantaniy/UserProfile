@@ -15,7 +15,7 @@ const Welcome = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.1 }}
-          className='text-6xl font-google font-bold c1 t5'
+          className='text-6xl font-google font-bold t5'
         >
           Welcome
         </motion.h1>
@@ -24,7 +24,7 @@ const Welcome = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className='flex font-comic c2 px-2 justify-baseline items-end'
+          className='flex font-comic t6 px-2 justify-baseline items-end'
         >
           to my
         </motion.h3>

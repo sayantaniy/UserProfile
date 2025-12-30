@@ -26,7 +26,7 @@ const basicinfo = () => {
         transition={{ delay: 0.4, duration: 0.6 }}
         className='font-dmserif lg:text-lg t6 mt-5'
       >
-        an enthusiastic and curious individual from India who enjoys exploring technology, programming, and creative projects, has a keen interest in building interactive web applications. Sayantani is detail-oriented and enjoys learning new skills, often experimenting with design, animations, and project development. Her approach combines both creativity and technical precision, reflecting a thoughtful and innovative mindset.
+        an enthusiastic and curious individual from India who enjoys exploring technology, programming, and creative projects, she has a keen interest in building interactive web applications. Sayantani is detail-oriented and enjoys learning new skills, often experimenting with design, animations, and project development. Her approach combines both creativity and technical precision, reflecting a thoughtful and innovative mindset.
       </motion.p>
       
      

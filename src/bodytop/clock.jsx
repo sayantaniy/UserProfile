@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Clock() {
   const [time, setTime] = useState("");
@@ -21,12 +22,17 @@ export default function Clock() {
 
   return (
     <div className="flex items-center justify-center ml-5">
-      <div className=" text-white px-10 py-6 rounded-2xl shadow-2xl backdrop-blur-md ">
+      <motion.div
+        initial={{ opacity: 0, y: 6 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+        className="text-white px-10 py-6 rounded-2xl shadow-2xl backdrop-blur-md"
+      >
         <p className="t5 font-dmserif tracking-wide text-center">Time</p>
         <h1 className="mt-1 t6 font-semibold tracking-widest text-center">
           {time}
         </h1>
-      </div>
+      </motion.div>
     </div>
   );
 }

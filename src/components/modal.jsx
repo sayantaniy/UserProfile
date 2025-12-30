@@ -11,7 +11,7 @@ const astroProfile = {
     rulingPlanet: "Sun",
     keywords: ["Charismatic", "Confident", "Expressive", "Warm"],
     description:
-      "Sayantani’s rising sign is Leo, which means she naturally carries a bold, magnetic presence wherever she goes. Leo rising gives her an expressive aura — people often notice her confidence even before she speaks. There is a quiet leadership in how she moves, paired with warmth and dramatic flair. She may come across as strong, self-assured, and creative, even if internally she feels more reserved at times. This placement gives her the ability to inspire others simply by being herself, and it pushes her to live authentically, with pride in her identity and a deep need to shine in her own unique way."
+      "Sayantani’s rising sign is Leo, which means she naturally carries a bold, magnetic presence wherever she goes. Leo rising gives her an expressive aura — people often notice her confidence even before she speaks. There is a quiet leadership, paired with warmth and dramatic flair. She may come across as strong, self-assured, and creative, even if internally she feels more reserved at times. This placement gives her the ability to inspire others simply by being herself, and it pushes her to live authentically, with pride in her identity and a deep need to shine in her own unique way."
   },
 
   sun: {

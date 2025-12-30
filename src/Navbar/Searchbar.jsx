@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "motion/react"
+import { Moon } from 'lucide-react';
 
 const Searchbar = () => {
   return (
@@ -7,7 +8,7 @@ const Searchbar = () => {
       initial={{ opacity: 0, y: -15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className='font-patrick flex flex-row lg:inline-flex items-center justify-between gap-5 px-4 py-2 m-7 text-lg font-medium bg-pink-200 rounded-full text-shadow-rose-900 c3 t5 b2 hover:bg-pink-300 shadow-lg shadow-pink-300/50 whitespace-nowrap'
+      className='font-poppins flex flex-row lg:inline-flex items-center justify-between gap-5 px-4 py-2 m-7 text-lg font-medium bg-pink-200 rounded-full text-shadow-rose-900 c3 t5 b2 hover:bg-pink-300 shadow-lg shadow-pink-300/50 whitespace-nowrap'
     >
 
       <motion.img
@@ -19,17 +20,13 @@ const Searchbar = () => {
         className='w-12 h-12 rounded-full object-cover flex self-start shadow-lg shadow-pink-300/50 border-2 border-c4-700'
       />
 
-      <motion.h1 whileHover={{ scale: 1.1 }} transition={{ duration: 0.2 }} className='cursor-pointer hover:underline'>
-        Home
+      <motion.h1 whileHover={{ scale: 1.1 }} transition={{ duration: 0.2 }}>
+        <motion.p
+        className='px-4 flex tracking-wider'
+        >SAYANTANI  MANNA <span className='pl-4'> <Moon strokeWidth={1.5} />  </span></motion.p>
       </motion.h1>
 
-      <motion.h1 whileHover={{ scale: 1.1 }} transition={{ duration: 0.2 }} className='cursor-pointer hover:underline'>
-        Playlist
-      </motion.h1>
-
-      <motion.h1 whileHover={{ scale: 1.1 }} transition={{ duration: 0.2 }} className='cursor-pointer hover:underline'>
-        Games
-      </motion.h1>
+      
 
     </motion.div>
   )

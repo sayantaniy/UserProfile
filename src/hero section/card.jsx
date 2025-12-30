@@ -3,7 +3,7 @@ import { motion } from "motion/react"
 
 const card = ({onOpenModal}) => {
 
-  // Use a map to track touch events per button to prevent double-firing
+  // Using a map to track touch events per button to prevent double-firing
   const touchUsedRef = useRef({});
 
   // Handle click events
