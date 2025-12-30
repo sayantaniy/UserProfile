@@ -31,9 +31,6 @@ A personal profile website built with React, showcasing user information, astrol
 - **eslint-plugin-react-refresh 0.4.24** - ESLint plugin for React Fast Refresh
 - **globals 16.5.0** - Global variables for ESLint
 
-### Type Definitions
-- **@types/react 19.2.5** - TypeScript definitions for React
-- **@types/react-dom 19.2.3** - TypeScript definitions for React DOM
 
 ## Project Structure
 
