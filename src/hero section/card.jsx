@@ -70,6 +70,8 @@ const card = ({onOpenModal}) => {
           className='b4 rounded-full'
         >
           <img onClick={()=>{onOpenModal('sun')}}
+            role="button"
+            tabIndex={0}
             className='rounded-full h-7 w-7 object-cover b4 touch-manipulation'
             src='https://i.pinimg.com/736x/e5/69/47/e56947ee8299bdb266d90c2e3c8f592c.jpg'
           />
@@ -82,6 +84,7 @@ const card = ({onOpenModal}) => {
           className='bg-amber-950 b4 rounded-full'
         >
           <img onClick={()=>{onOpenModal('moon')}}
+          role='button'
             className='rounded-full h-7 w-7 object-cover b4 touch-manipulation'
             src='https://i.pinimg.com/736x/91/3c/de/913cde2fba66f906bc1512603df28029.jpg'
           />
@@ -91,6 +94,8 @@ const card = ({onOpenModal}) => {
       {/* Personality badge */}
       <motion.div
         onClick={()=>{onOpenModal('mbti')}}
+        role="button"
+  tabIndex={0}
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.4 }}
