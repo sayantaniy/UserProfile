@@ -1,8 +1,37 @@
-import React, { useState } from 'react'
+import React, { useRef } from 'react'
 import { motion } from "motion/react"
 
 const card = ({onOpenModal}) => {
 
+  // Use a map to track touch events per button to prevent double-firing
+  const touchUsedRef = useRef({});
+
+  // Handle click events
+  const handleClick = (type, e) => {
+    // If touch was used recently for this button, ignore click to prevent double-firing
+    if (touchUsedRef.current[type]) {
+      touchUsedRef.current[type] = false;
+      return;
+    }
+    if (e) {
+      e.stopPropagation();
+    }
+    onOpenModal(type);
+  };
+
+  // Handle touch events
+  const handleTouch = (type, e) => {
+    touchUsedRef.current[type] = true;
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    onOpenModal(type);
+    // Reset after a short delay
+    setTimeout(() => {
+      touchUsedRef.current[type] = false;
+    }, 300);
+  };
 
   return (
     <motion.div
@@ -53,9 +82,21 @@ const card = ({onOpenModal}) => {
           id='rising'
           className='bg-amber-500 rounded-full b4'
         >
-          <img onClick={()=>{onOpenModal('rising')}}
-            className='rounded-full h-7 w-7 object-cover b4 touch-manipulation'
+          <img 
+            onClick={(e) => handleClick('rising', e)}
+            onTouchEnd={(e) => handleTouch('rising', e)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                onOpenModal('rising');
+              }
+            }}
+            className='rounded-full h-7 w-7 object-cover b4 touch-manipulation cursor-pointer select-none'
+            style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent', userSelect: 'none' }}
             src='https://i.pinimg.com/736x/c1/c2/43/c1c243e0c05b608b40f9c555ad05be0e.jpg'
+            alt="Rising sign"
           />
         </motion.div>
 
@@ -69,11 +110,21 @@ const card = ({onOpenModal}) => {
           id='moonsign'
           className='b4 rounded-full'
         >
-          <img onClick={()=>{onOpenModal('sun')}}
+          <img 
+            onClick={(e) => handleClick('sun', e)}
+            onTouchEnd={(e) => handleTouch('sun', e)}
             role="button"
             tabIndex={0}
-            className='rounded-full h-7 w-7 object-cover b4 touch-manipulation'
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                onOpenModal('sun');
+              }
+            }}
+            className='rounded-full h-7 w-7 object-cover b4 touch-manipulation cursor-pointer select-none'
+            style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent', userSelect: 'none' }}
             src='https://i.pinimg.com/736x/e5/69/47/e56947ee8299bdb266d90c2e3c8f592c.jpg'
+            alt="Sun sign"
           />
         </motion.div>
 
@@ -83,24 +134,43 @@ const card = ({onOpenModal}) => {
           id='sunsign'
           className='bg-amber-950 b4 rounded-full'
         >
-          <img onClick={()=>{onOpenModal('moon')}}
-          role='button'
-            className='rounded-full h-7 w-7 object-cover b4 touch-manipulation'
+          <img 
+            onClick={(e) => handleClick('moon', e)}
+            onTouchEnd={(e) => handleTouch('moon', e)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                onOpenModal('moon');
+              }
+            }}
+            className='rounded-full h-7 w-7 object-cover b4 touch-manipulation cursor-pointer select-none'
+            style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent', userSelect: 'none' }}
             src='https://i.pinimg.com/736x/91/3c/de/913cde2fba66f906bc1512603df28029.jpg'
+            alt="Moon sign"
           />
         </motion.div>
       </motion.div>
 
       {/* Personality badge */}
       <motion.div
-        onClick={()=>{onOpenModal('mbti')}}
+        onClick={(e) => handleClick('mbti', e)}
+        onTouchEnd={(e) => handleTouch('mbti', e)}
         role="button"
-  tabIndex={0}
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            onOpenModal('mbti');
+          }
+        }}
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.4 }}
         whileHover={{ scale: 1.05 }}
-        className='font-bold px-3 py-2 mt-2 bg-amber-800 rounded-2xl font-patrick t5 c3 cursor-pointer hover:scale-110 transform transition duration-300 ease-in-out'
+        className='font-bold px-3 py-2 mt-2 bg-amber-800 rounded-2xl font-patrick t5 c3 cursor-pointer hover:scale-110 transform transition duration-300 ease-in-out select-none touch-manipulation'
+        style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent', userSelect: 'none' }}
       >
         INTJ
       </motion.div>

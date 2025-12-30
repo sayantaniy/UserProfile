@@ -121,8 +121,17 @@ const Modal = ({ title, onClose }) => {
           {/* Close Button */}
           <div className="flex justify-end">
             <motion.button
-              onClick={onClose}
-              className="px-5 py-2 font-patrick mt-5 t5 c4 b5 mb-6 rounded-lg font-semibold"
+              onClick={(e) => {
+                e.stopPropagation();
+                onClose();
+              }}
+              onTouchEnd={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                onClose();
+              }}
+              className="px-5 py-2 font-patrick mt-5 t5 c4 b5 mb-6 rounded-lg font-semibold cursor-pointer touch-manipulation select-none"
+              style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent', userSelect: 'none' }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
