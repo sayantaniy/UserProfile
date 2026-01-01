@@ -45,7 +45,7 @@ const Weather = () => {
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="font-patrick flex justify-center items-center gap-4 bg-white/10 backdrop-blur-md px-6 py-2 rounded-full b1 m-4 t5 w-64 text-center"
     >
-      <h2 className="text-lg font-semibold">{weather.name}</h2>
+      <h2 className="text-lg font-semibold">Howrah</h2>
       <p className="text-4xl font-bold">
         {Math.round(weather.main.temp)}°C
       </p>
